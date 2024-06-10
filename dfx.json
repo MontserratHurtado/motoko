@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "refugiode_backend": {
+      "main": "src/refugiode_backend/main.mo",
+      "type": "motoko"
+    },
+    "refugiode_frontend": {
+      "dependencies": [
+        "refugiode_backend"
+      ],
+      "source": [
+        "src/refugiode_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "refugiode_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
